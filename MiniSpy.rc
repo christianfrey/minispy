@@ -1,0 +1,184 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APP                 ICON                    "MiniSpy.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDCUR_FINDER            CURSOR                  "Finder.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_APP DIALOGEX 0, 0, 267, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "MiniSpy"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Exit",IDCANCEL,210,149,50,14
+    CONTROL         1004,IDST_BMP,"Static",SS_BITMAP | SS_NOTIFY,14,18,20,19
+    LTEXT           "Drag the Finder Tool over a window\r\nto select it, then release the mouse.",
+                    IDC_STATIC,39,19,116,17
+    GROUPBOX        "Finder Tool",IDC_STATIC,7,7,151,35
+    CONTROL         "",ID_TABCTRL,"SysTabControl32",WS_TABSTOP,7,47,253,99
+    GROUPBOX        "Options",IDC_STATIC,165,7,95,35
+    CONTROL         "Stay on top",IDCHK_ONTOP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,170,18,50,8
+    CONTROL         "Auto Hide MiniSpy",IDCHK_AUTOHIDE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,170,28,71,8
+    CONTROL         "Coded By Urgo ~ Copyright © 2005",3,"Static",
+                    SS_LEFTNOWORDWRAP | WS_DISABLED,7,153,116,9
+END
+
+IDD_TAB1 DIALOGEX 0, 0, 245, 79
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Handle:",IDC_STATIC,5,6,25,8
+    LTEXT           "Caption:",IDC_STATIC,5,20,28,8
+    LTEXT           "Class:",IDC_STATIC,5,35,20,8
+    LTEXT           "Rect:",IDC_STATIC,5,49,18,8
+    LTEXT           "Client Rect:",IDC_STATIC,5,64,37,8
+    EDITTEXT        IDED_HANDLE,50,5,190,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDED_CAPTION,50,19,190,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDED_CLASS,50,33,190,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDED_RECT,50,48,190,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDED_CLIENTRECT,50,62,190,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_TAB2 DIALOGEX 0, 0, 245, 79
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Window Styles:",IDC_STATIC,5,6,49,10
+    LTEXT           "Extended Styles:",IDC_STATIC,124,6,56,10
+    EDITTEXT        IDED_STYLES,72,4,48,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDED_EXSTYLES,191,4,48,12,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         IDLST_STYLES,5,19,115,55,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDLST_EXSTYLES,124,19,115,55,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TAB3 DIALOGEX 0, 0, 245, 79
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Module Name:",IDC_STATIC,5,6,45,10
+    LTEXT           "Module Path:",IDC_STATIC,5,20,42,10
+    EDITTEXT        IDED_MODNAME,60,5,180,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDED_MODPATH,60,19,180,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Process Id:",IDC_STATIC,5,40,36,10
+    LTEXT           "Thread Id:",IDC_STATIC,5,54,34,10
+    EDITTEXT        IDED_PROCID,60,39,180,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDED_THRDID,60,53,180,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_APP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDBMP_EMPTY             BITMAP                  "FinderEmpty.bmp"
+IDBMP_FILLED            BITMAP                  "FinderFilled.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "manifest.xml"
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
